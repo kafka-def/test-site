@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kuertov-project — Свободный доступ</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar glass">
+        <div class="nav-container">
+            <a href="#" class="logo">kuertov<span class="accent">.project</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">О проекте</a></li>
+                <li><a href="#vpn">VPN</a></li>
+                <li><a href="#telegram">Канал</a></li>
+                <li><a href="#help">Помощь</a></li>
+                <li><a href="#team">Команда</a></li>
+                <li><a href="#contact">Связь</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <canvas id="particles"></canvas>
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <h1 class="hero-title reveal">
+                Доступ к информации<br>без <span class="accent">ограничений</span>
+            </h1>
+            <div class="hero-glitch-line reveal"></div>
+            <p class="hero-subtitle reveal">
+                Проект, где нет лишних блокировок. Прозрачная работа, помощь с VPN, свобода слова.
+            </p>
+            <div class="hero-buttons reveal">
+                <a href="#vpn" class="btn-primary glass-btn">Получить VPN</a>
+                <a href="#about" class="btn-secondary glass">Узнать больше</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Листай вниз</span>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VPN подписка -->
+    <section class="vpn" id="vpn">
+        <div class="container">
+            <h2 class="section-title reveal">VPN подписка</h2>
+            <div class="vpn-card glass reveal">
+                <div class="glass-shine"></div>
+                <p class="vpn-description">
+                    Скопируй ссылку ниже и вставь в любой VPN клиент. Подписка обновляется автоматически.
+                </p>
+                <div class="vpn-link-wrapper">
+                    <code class="vpn-link glass">https://gist.githubusercontent.com/zorka-project/efc486572e465d9fb6698264e9895f59/raw/kuertov-project.txt</code>
+                    <button class="btn-copy" id="copyBtn">
+                        <span class="copy-text">Копировать ссылку</span>
+                    </button>
+                </div>
+                <div class="copy-notification" id="copyNotification">
+                    Ссылка скопирована!
+                </div>
+                <div class="vpn-instruction">
+                    <h3>Как подключиться:</h3>
+                    <ol>
+                        <li>Скопируйте ссылку подписки нажав на кнопку выше</li>
+                        <li>Откройте ваш VPN клиент</li>
+                        <li>Вставьте скопированную ссылку в раздел "Подписка" или "Добавить из ссылки"</li>
+                        <li>Нажмите "Обновить подписку" — конфиги загрузятся автоматически</li>
+                    </ol>
+                    
+                    <h3>Рекомендуемые клиенты:</h3>
+                    <div class="vpn-clients">
+                        <div class="client-item glass"><span class="dot green"></span> Hiddify — Windows, macOS, Linux, Android, iOS</div>
+                        <div class="client-item glass"><span class="dot cyan"></span> V2RayNG — Android</div>
+                        <div class="client-item glass"><span class="dot magenta"></span> NekoRay — Windows, Linux</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Telegram канал -->
+    <section class="telegram" id="telegram">
+        <div class="container">
+            <h2 class="section-title reveal">Наш Telegram</h2>
+            <div class="telegram-card glass reveal">
+                <div class="glass-shine"></div>
+                <p class="telegram-description">
+                    Подписывайся на наш основной канал. Там все новости, обновления подписки и ответы на вопросы.
+                </p>
+                <a href="https://t.me/kuertov_project" class="btn-telegram glass-btn" target="_blank">
+                    ПЕРЕЙТИ В КАНАЛ
+                </a>
+                <div class="telegram-links">
+                    <a href="https://t.me/kuertov_project_Chat" class="glass" target="_blank"><span class="dot cyan"></span> Чат канала</a>
+                    <a href="https://t.me/kuertov_project_adapter" class="glass" target="_blank"><span class="dot magenta"></span> Резервный канал</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- О проекте -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title reveal">О проекте</h2>
+            <div class="about-grid">
+                <div class="about-card glass reveal">
+                    <div class="glass-shine"></div>
+                    <div class="icon">🛡️</div>
+                    <h3>Никаких ограничений</h3>
+                    <p>Мы против цензуры и блокировок. Доступ к информации — базовое право каждого человека.</p>
+                </div>
+                <div class="about-card glass reveal">
+                    <div class="glass-shine"></div>
+                    <div class="icon">😎</div>
+                    <h3>Прозрачность</h3>
+                    <p>Не скрываем, как устроен проект. Открыто рассказываем об изменениях и соблюдаем регламент.</p>
+                </div>
+                <div class="about-card glass reveal">
+                    <div class="glass-shine"></div>
+                    <div class="icon">🤗</div>
+                    <h3>Развитие</h3>
+                    <p>Постоянно улучшаем подписку и делаем доступ к сети проще для каждого пользователя.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Помощь -->
+    <section class="help" id="help">
+        <div class="container">
+            <h2 class="section-title reveal">Нужна помощь?</h2>
+            <div class="help-content glass reveal">
+                <div class="glass-shine"></div>
+                <p class="help-text">
+                    Если у вас возникли проблемы с VPN или есть вопросы по настройке — мы постараемся помочь. 
+                    Наша команда всегда на связи и готова ответить на ваши вопросы.
+                </p>
+                <div class="help-features">
+                    <div class="feature reveal glass"><span class="dot green"></span> Настройка VPN</div>
+                    <div class="feature reveal glass"><span class="dot cyan"></span> Консультации</div>
+                    <div class="feature reveal glass"><span class="dot magenta"></span> Обход блокировок</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Команда -->
+    <section class="team" id="team">
+        <div class="container">
+            <h2 class="section-title reveal">Слова от команды</h2>
+            <div class="team-quote glass reveal">
+                <div class="glass-shine"></div>
+                <p class="quote-text">"Сейчас тяжёлое время, всем не легко. Государство душит народ со всех сторон, но ограничивать людям доступ к информации — это новая война, в которой мы всегда будем в выигрыше."</p>
+                <p class="quote-text">"Вся команда проекта сочувствует людям, которые пострадали от боевых действий. Хочется пожелать Вам сил, терпения и безопасности."</p>
+                <p class="quote-text">"Мир и человеческая жизнь всегда должны оставаться важнее любых разногласий."</p>
+                <p class="quote-accent">Берегите себя и своих близких, а мы в свою очередь будем сохранять доступ к информации и правде, которую государство хочет скрыть.</p>
+                <p class="quote-signature">С любовью и уважением, команда kuertov-project</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title reveal">Связь с нами</h2>
+            <div class="contact-grid">
+                <a href="https://t.me/zorka_kuertov" class="contact-card glass reveal" target="_blank">
+                    <div class="glass-shine"></div>
+                    <div class="contact-icon">👤</div>
+                    <h3>Владелец</h3>
+                    <p>@zorka_kuertov</p>
+                </a>
+                <a href="https://telegra.ph/Reglament-kanala-kuertov-project-06-08" class="contact-card glass reveal" target="_blank">
+                    <div class="glass-shine"></div>
+                    <div class="contact-icon">📋</div>
+                    <h3>Регламент</h3>
+                    <p>Правила проекта</p>
+                </a>
+                <a href="https://gist.githubusercontent.com/zorka-project/efc486572e465d9fb6698264e9895f59/raw/kuertov-project.txt" class="contact-card glass reveal" target="_blank">
+                    <div class="glass-shine"></div>
+                    <div class="contact-icon">🔗</div>
+                    <h3>Подписка</h3>
+                    <p>Конфиги VPN</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer glass">
+        <div class="container">
+            <p class="footer-title">kuertov-project</p>
+            <p class="footer-rights">Все права защищены</p>
+            <p class="footer-year">2026</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
